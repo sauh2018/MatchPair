@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameViewController" customModule="MatchPictures" customModuleProvider="target">
+            <connections>
+                <outlet property="animatedBackgroundView" destination="yL3-iN-Qls" id="0lq-3Q-Iro"/>
+                <outlet property="collectionView" destination="RZP-IN-8cf" id="pYu-fz-kdT"/>
+                <outlet property="congraulationLabel" destination="5TX-bL-ZUG" id="4Om-b5-R6D"/>
+                <outlet property="menuButton" destination="lyQ-cB-Izq" id="EiR-07-Wiv"/>
+                <outlet property="repeatGameButton" destination="HP2-Dz-Hgq" id="YIi-Sh-KLw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yL3-iN-Qls" customClass="AnimationView" customModule="Lottie">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="RZP-IN-8cf">
+                    <rect key="frame" x="19" y="148" width="337.5" height="371"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="RZP-IN-8cf" secondAttribute="height" multiplier="10:11" priority="751" id="gt1-ac-0PE"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rDa-8U-3Xh">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyQ-cB-Izq">
+                    <rect key="frame" x="16" y="16" width="40" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="lyQ-cB-Izq" secondAttribute="height" multiplier="1:1" id="UbZ-8F-rJS"/>
+                        <constraint firstAttribute="width" constant="40" id="qod-Ae-QsT"/>
+                    </constraints>
+                    <state key="normal" image="ic_menu"/>
+                    <connections>
+                        <action selector="didMenuButtonClicked:" destination="-1" eventType="touchUpInside" id="I5F-tW-zTM"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="Congratulations!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TX-bL-ZUG">
+                    <rect key="frame" x="62" y="91" width="251" height="41"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HP2-Dz-Hgq">
+                    <rect key="frame" x="94" y="589" width="187.5" height="46"/>
+                    <color key="backgroundColor" red="1" green="0.7725490196" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="2vz-JY-dIT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                    <state key="normal" title="Repeat">
+                        <color key="titleColor" name="commonWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didRepeatButtonClicked:" destination="-1" eventType="touchUpInside" id="Vkr-bz-pXS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="HP2-Dz-Hgq" firstAttribute="width" secondItem="yL3-iN-Qls" secondAttribute="width" multiplier="0.5" id="30a-i4-AQV"/>
+                <constraint firstItem="5TX-bL-ZUG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="lyQ-cB-Izq" secondAttribute="bottom" constant="16" id="DI9-qX-FHN"/>
+                <constraint firstItem="HP2-Dz-Hgq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="RZP-IN-8cf" secondAttribute="bottom" constant="8" id="DxB-b4-6nU"/>
+                <constraint firstItem="RZP-IN-8cf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GuX-lL-3hU"/>
+                <constraint firstItem="yL3-iN-Qls" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="HtO-hU-hKf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HP2-Dz-Hgq" secondAttribute="bottom" constant="32" id="HtT-dK-zOB"/>
+                <constraint firstItem="lyQ-cB-Izq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="Ol3-e0-yRG"/>
+                <constraint firstItem="yL3-iN-Qls" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YcG-jj-BfU"/>
+                <constraint firstItem="lyQ-cB-Izq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="a4G-Ww-hkk"/>
+                <constraint firstItem="5TX-bL-ZUG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dGW-W0-Cef"/>
+                <constraint firstItem="yL3-iN-Qls" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fY7-dx-oqY"/>
+                <constraint firstItem="RZP-IN-8cf" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.9" id="fZC-a6-xgV"/>
+                <constraint firstItem="RZP-IN-8cf" firstAttribute="top" secondItem="5TX-bL-ZUG" secondAttribute="bottom" constant="16" id="g9D-64-NjV"/>
+                <constraint firstItem="HP2-Dz-Hgq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nfT-bD-gbt"/>
+                <constraint firstAttribute="bottom" secondItem="yL3-iN-Qls" secondAttribute="bottom" id="vOj-b2-89U"/>
+                <constraint firstItem="RZP-IN-8cf" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" priority="751" id="zgc-m1-3eT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="128.57142857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_menu" width="18" height="12"/>
+        <namedColor name="commonWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
