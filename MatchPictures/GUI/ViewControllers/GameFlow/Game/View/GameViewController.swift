@@ -46,6 +46,12 @@ final class GameViewController: UIViewController {
         startAnimation()
     }
 
+    // MARK: - Base Overrides
+
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return [.portrait]
+    }
+
     // MARK: - UI
 
     private func prepareUI() {

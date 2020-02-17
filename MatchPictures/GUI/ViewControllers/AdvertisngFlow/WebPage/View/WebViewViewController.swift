@@ -41,10 +41,6 @@ final class WebViewViewController: UIViewController {
         loadWebPage()
     }
 
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return [.all]
-    }
-
     // MARK: - Logic
 
     private func loadWebPage() {

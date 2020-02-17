@@ -16,6 +16,7 @@
 		921709F923F80B1800BF935E /* MenuConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921709F823F80B1800BF935E /* MenuConfigurator.swift */; };
 		921709FE23F810D100BF935E /* GameCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921709FD23F810D100BF935E /* GameCoordinator.swift */; };
 		92170A0323F819C200BF935E /* menu_background.json in Resources */ = {isa = PBXBuildFile; fileRef = 92170A0223F819C200BF935E /* menu_background.json */; };
+		922B644D23FA9FD800FD1C5F /* UINavigationController+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922B644C23FA9FD800FD1C5F /* UINavigationController+Orientation.swift */; };
 		92515AC523F84123002916D7 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92515AC323F84123002916D7 /* CardCollectionViewCell.swift */; };
 		92515AC623F84123002916D7 /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92515AC423F84123002916D7 /* CardCollectionViewCell.xib */; };
 		927226F823F741A4004D5243 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927226F723F741A4004D5243 /* AppDelegate.swift */; };
@@ -89,6 +90,7 @@
 		921709F823F80B1800BF935E /* MenuConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuConfigurator.swift; sourceTree = "<group>"; };
 		921709FD23F810D100BF935E /* GameCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCoordinator.swift; sourceTree = "<group>"; };
 		92170A0223F819C200BF935E /* menu_background.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu_background.json; sourceTree = "<group>"; };
+		922B644C23FA9FD800FD1C5F /* UINavigationController+Orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Orientation.swift"; sourceTree = "<group>"; };
 		92515AC323F84123002916D7 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		92515AC423F84123002916D7 /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
 		927226F423F741A4004D5243 /* MatchPictures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchPictures.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -311,6 +313,7 @@
 				9272275F23F77850004D5243 /* UIView+Animation.swift */,
 				9272275E23F77850004D5243 /* UIView+Help.swift */,
 				9272276123F77850004D5243 /* UIViewController+Help.swift */,
+				922B644C23FA9FD800FD1C5F /* UINavigationController+Orientation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -737,6 +740,7 @@
 				9272276F23F77850004D5243 /* CALayer+Shadow.swift in Sources */,
 				9276F96523F7F15E000270FC /* SplashViewModelProtocol.swift in Sources */,
 				9272272B23F7514D004D5243 /* LocalInteractor.swift in Sources */,
+				922B644D23FA9FD800FD1C5F /* UINavigationController+Orientation.swift in Sources */,
 				9272276723F77850004D5243 /* UILabel+Animation.swift in Sources */,
 				92F3D48B23F8217B00937CF8 /* MatchPairGame.swift in Sources */,
 				9272273023F7597F004D5243 /* UserDefaultsMediator.swift in Sources */,
@@ -930,14 +934,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MatchPictures/MatchPictures.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MT2S9RW4XH;
+				DEVELOPMENT_TEAM = NH6W5X3XUV;
 				INFOPLIST_FILE = MatchPictures/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sauh.matchPictures.MatchPicture;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sauh.matchPictures.MatchPictures;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -951,14 +955,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MatchPictures/MatchPictures.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MT2S9RW4XH;
+				DEVELOPMENT_TEAM = NH6W5X3XUV;
 				INFOPLIST_FILE = MatchPictures/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sauh.matchPictures.MatchPicture;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sauh.matchPictures.MatchPictures;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

@@ -39,6 +39,12 @@ final class SplashViewController: UIViewController {
         playAnimation()
     }
 
+    // MARK: - Base Overrides
+
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return [.portrait]
+    }
+
     // MARK: - Animation
 
     private func configureAnimation() {
