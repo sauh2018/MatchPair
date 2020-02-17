@@ -32,11 +32,11 @@ extension UIView {
     func bounce() {
         UIView.animate(withDuration: 0.2, animations: {
             self.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
-        }) { _ in
+        }, completion: { _ in
             UIView.animate(withDuration: 0.2) {
                 self.transform = .identity
             }
-        }
+        })
     }
 
 }

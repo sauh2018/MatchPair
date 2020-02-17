@@ -16,7 +16,7 @@ final class GameViewController: UIViewController {
     @IBOutlet weak private var congraulationLabel: UILabel!
     @IBOutlet weak private var repeatGameButton: UIButton!
     @IBOutlet weak private var animatedBackgroundView: AnimationView!
-    
+
     private let model: GameViewModelProtocol
 
     // MARK: - Init/Deinit
@@ -101,7 +101,7 @@ final class GameViewController: UIViewController {
 
     private func startAnimation() {
         self.animatedBackgroundView.play()
-    }    
+    }
 
     // MARK: - Actions
 
